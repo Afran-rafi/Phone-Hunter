@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <main class="lg:px-32 px-6 2xl:container mx-auto">
+
+        <!-- Title Section -->
+
+        <div>
+            <h1 class="text-5xl text-center underline">Phone Store</h1>
+        </div>
+
+        <!-- Phone Store Section -->
+
+        <section class="grid lg:grid-cols-2 grid-cols-1 items-center h reverse">
+            <div class="reverse">
+                <h1 class="text-5xl">Online Shopping For Phone store</h1>
+                <p class="text-xl">Since February 2 2022</p>
+                <div class="mt-4">
+                    <input id="input-field" placeholder="  Search your fav phone" class="input-field" type="text">
+                    <button onclick="searchField()" class="bg-yellow-400 py-2 px-4 rounded text-white">search</button>
+                    <div id="error"></div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img class="" src="Images/Phone-Store.png" alt="">
+            </div>
+        </section>
+
+        <!-- Card section -->
+
+        <div>
+            <h1 class="text-center text-4xl underline">Product Section</h1>
+        </div>
+        <section id="card-sec" class="mt-10">
+
+        </section>
+
+    </main>
+    
+    <!-- Tailwind Connected -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- JS Connected-->
+    <script src="JS/app.js"></script>
+</body>
+</html>

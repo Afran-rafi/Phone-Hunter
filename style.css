@@ -1,0 +1,53 @@
+.h{
+    height: 85vh;
+}
+
+.input-field{
+    width: 60%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.background{
+    background-color: #31A5AC;
+}
+
+.bdr{
+    border-radius: 8px;
+    background-color: #F0EFEC;
+    padding: 20px;
+}
+
+#card-sec{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.error-msg{
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .reverse{
+        order: 6;
+    }
+
+    .input-field{
+        width: 70%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    #card-sec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 20px;
+    }
+}
+
