@@ -9,6 +9,15 @@ const searchField = () => {
             .then(data => getProduct(data.data))
     }
 
+    else if (value == '') {
+        const error = document.getElementById('error')
+        error.textContent = '';
+        const p = document.createElement('p');
+        p.classList.add('error-msg')
+        p.innerText = 'Error: Sorry!! Please Typing Anything..';
+        error.appendChild(p);
+    }
+
     else {
         const error = document.getElementById('error')
         error.textContent = '';
