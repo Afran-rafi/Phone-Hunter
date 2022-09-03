@@ -31,6 +31,11 @@
     font-weight: bold;
 }
 
+.solve-msg{
+    color: green;
+    font-weight: bold;
+}
+
 .details{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

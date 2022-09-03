@@ -7,6 +7,13 @@ const searchField = () => {
         fetch(`https://openapi.programming-hero.com/api/phones?search=${value}`)
             .then(res => res.json())
             .then(data => getProduct(data.data))
+
+        const error = document.getElementById('error')
+        error.textContent = '';
+        const p = document.createElement('p');
+        p.classList.add('solve-msg')
+        p.innerText = `Hurrah!! I find the phone.`;
+        error.appendChild(p);
     }
 
     else if (value == '') {
