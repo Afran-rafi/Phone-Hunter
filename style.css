@@ -31,6 +31,13 @@
     font-weight: bold;
 }
 
+.details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #F0EFEC;
+    padding: 30px;
+}
+
 @media screen and (max-width: 450px) {
     .reverse{
         order: 6;
@@ -48,6 +55,14 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         margin-bottom: 20px;
+    }
+
+    .details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        background-color: #F0EFEC;
+        padding: 30px;
     }
 }
 
